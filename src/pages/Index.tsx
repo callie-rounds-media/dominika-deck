@@ -958,6 +958,9 @@ const Index = () => {
 
             <ul className="space-y-3 pt-4">
               {[
+                { line: "days 1 to 2. journal prompts.", done: true },
+                { line: "day 3. kickoff call.", done: true },
+                { line: "days 4 to 6. niche exploration.", done: true },
                 { line: "day 7. voice and visual locked.", done: false },
                 { line: "days 8 to 9. content pillars built together.", done: false },
                 { line: "day 10. competitor and inspiration research.", done: true },
