@@ -10,6 +10,11 @@ import feedEarthyMoodboard from "@/assets/feed-earthy-moodboard.jpg";
 import feedCleanPilates from "@/assets/feed-clean-pilates.jpg";
 import paletteReference from "@/assets/palette-reference.jpg";
 import strategyBrain from "@/assets/strategy-brain.jpg";
+import niche1Intro from "@/assets/niche-1-intro.jpg";
+import niche2Direction from "@/assets/niche-2-direction.jpg";
+import niche3Life from "@/assets/niche-3-life.jpg";
+import niche4Vision from "@/assets/niche-4-vision.jpg";
+import niche5Future from "@/assets/niche-5-future.jpg";
 import typoBgFraunces from "@/assets/typography-bg-fraunces.jpg";
 import typoBgCormorant from "@/assets/typography-bg-cormorant.jpg";
 import typoBgPlayfair from "@/assets/typography-bg-playfair.jpg";
@@ -210,32 +215,80 @@ const Index = () => {
             niche that feels right for now :)
           </p>
 
-          <div className="grid grid-cols-1 md:grid-cols-12">
-            <div className="md:col-span-10 md:col-start-2 space-y-10 text-[15.5px] leading-[1.75] text-ink/80">
-              <p>
-                i want your niche to feel relatable, where people actually
-                connect with your lifestyle. but not so broad that you're lost
-                in the wellness or lifestyle creator pile. a space that feels
-                distinct, intentional, and consistent. yours.
-              </p>
+          <div className="space-y-20 md:space-y-28 max-w-6xl mx-auto">
+            {/* INTRO · image left, text right */}
+            <div className="grid grid-cols-1 md:grid-cols-12 gap-y-8 gap-x-12 items-center">
+              <div className="md:col-span-4 md:col-start-1">
+                <div
+                  className="w-full overflow-hidden grain-soft ring-1 ring-ink/10"
+                  style={{ aspectRatio: "4 / 5" }}
+                >
+                  <img
+                    src={niche1Intro}
+                    alt=""
+                    loading="lazy"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+              </div>
+              <div className="md:col-span-7 md:col-start-6 space-y-4">
+                <p className="text-[15.5px] leading-[1.75] text-ink/85">
+                  i want your niche to feel relatable, where people actually
+                  connect with your lifestyle. but not so broad that you're
+                  lost in the wellness or lifestyle creator pile. a space that
+                  feels distinct, intentional, and consistent. yours.
+                </p>
+              </div>
+            </div>
 
-              <div className="space-y-3 border-t border-ink/15 pt-8">
+            {/* DIRECTION · image right, text left */}
+            <div className="grid grid-cols-1 md:grid-cols-12 gap-y-8 gap-x-12 items-center">
+              <div className="md:col-span-7 md:col-start-1 space-y-4 md:order-1 order-2">
                 <p className="uppercase tracking-[0.22em] text-[10px] text-ink/50">
                   the direction · first 12 months
                 </p>
-                <p>
+                <p className="text-[15.5px] leading-[1.75] text-ink/85">
                   a modern soft strength lifestyle, where wellness, ambition,
                   and adventure all coexist. you inspire people to live with
                   intention, rethink what success looks like, and build a life
                   on their own terms.
                 </p>
               </div>
+              <div className="md:col-span-4 md:col-start-9 md:order-2 order-1">
+                <div
+                  className="w-full overflow-hidden grain-soft ring-1 ring-ink/10"
+                  style={{ aspectRatio: "4 / 5" }}
+                >
+                  <img
+                    src={niche2Direction}
+                    alt=""
+                    loading="lazy"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+              </div>
+            </div>
 
-              <div className="space-y-3 border-t border-ink/15 pt-8">
+            {/* LIFE · image left, text right */}
+            <div className="grid grid-cols-1 md:grid-cols-12 gap-y-8 gap-x-12 items-center">
+              <div className="md:col-span-4 md:col-start-1">
+                <div
+                  className="w-full overflow-hidden grain-soft ring-1 ring-ink/10"
+                  style={{ aspectRatio: "4 / 5" }}
+                >
+                  <img
+                    src={niche3Life}
+                    alt=""
+                    loading="lazy"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+              </div>
+              <div className="md:col-span-7 md:col-start-6 space-y-4">
                 <p className="uppercase tracking-[0.22em] text-[10px] text-ink/50">
                   how this comes to life
                 </p>
-                <p>
+                <p className="text-[15.5px] leading-[1.75] text-ink/85">
                   your content reflects you. the curiosity to explore the
                   world. the bravery to move through it independently. the
                   discipline to keep your strength. the work ethic and
@@ -243,31 +296,57 @@ const Index = () => {
                   wisdom to know when to slow down and just be present.
                 </p>
               </div>
+            </div>
 
-              <div className="space-y-3 border-t border-ink/15 pt-8">
+            {/* VISION · image right, text left */}
+            <div className="grid grid-cols-1 md:grid-cols-12 gap-y-8 gap-x-12 items-center">
+              <div className="md:col-span-7 md:col-start-1 space-y-4 md:order-1 order-2">
                 <p className="uppercase tracking-[0.22em] text-[10px] text-ink/50">
                   long-term vision
                 </p>
-                <p>
+                <p className="text-[15.5px] leading-[1.75] text-ink/85">
                   as you evolve, this stretches beyond dubai. it becomes more
-                  location-independent. more yours.
+                  location-independent. a global, wellness-driven life rooted
+                  in freedom and intentional living. with bali as the next
+                  chapter when you're ready :)
                 </p>
               </div>
+              <div className="md:col-span-4 md:col-start-9 md:order-2 order-1">
+                <div
+                  className="w-full overflow-hidden grain-soft ring-1 ring-ink/10"
+                  style={{ aspectRatio: "4 / 5" }}
+                >
+                  <img
+                    src={niche4Vision}
+                    alt=""
+                    loading="lazy"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+              </div>
+            </div>
 
-              <div className="space-y-3 border-t border-ink/15 pt-8">
-                <p className="uppercase tracking-[0.22em] text-[10px] text-ink/50">
-                  where it goes
-                </p>
-                <p>
-                  a global, wellness-driven life rooted in freedom and
-                  intentional living. with bali as the next chapter when
-                  you're ready :)
+            {/* CLOSING · image left, affirmation right */}
+            <div className="grid grid-cols-1 md:grid-cols-12 gap-y-8 gap-x-12 items-center">
+              <div className="md:col-span-4 md:col-start-1">
+                <div
+                  className="w-full overflow-hidden grain-soft ring-1 ring-ink/10"
+                  style={{ aspectRatio: "4 / 5" }}
+                >
+                  <img
+                    src={niche5Future}
+                    alt=""
+                    loading="lazy"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+              </div>
+              <div className="md:col-span-7 md:col-start-6">
+                <p className="font-headline font-normal text-ink/90 text-[clamp(1.3rem,2vw,1.7rem)] leading-[1.35]">
+                  your audience grows with you. nothing has to change in who
+                  you are :)
                 </p>
               </div>
-
-              <p className="font-headline font-normal text-center pt-6 text-ink/85 text-[clamp(1.05rem,1.4vw,1.25rem)] leading-[1.5]">
-                your audience grows with you. nothing has to change in who you are.
-              </p>
             </div>
           </div>
         </div>
