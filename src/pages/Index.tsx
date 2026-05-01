@@ -1,4 +1,5 @@
 import coverDiptych from "@/assets/cover-diptych.jpg";
+import coverDubai from "@/assets/cover-dubai.jpg";
 import closingSilhouette from "@/assets/closing-sauna.jpg";
 import feedTropicalEarth from "@/assets/feed-tropical-earth.jpg";
 import feedWellnessNatural from "@/assets/feed-wellness-natural.jpg";
@@ -157,13 +158,22 @@ const Index = () => {
       <section className="relative h-[100svh] w-full overflow-hidden grain">
         <img
           src={coverDiptych}
-          alt="Dubai blue hour skyline beside a Bali jungle morning"
+          alt="Bali palm trees at golden hour"
           className="absolute inset-0 h-full w-full object-cover"
           width={1920}
           height={1280}
           style={{
             filter:
               "sepia(0.45) saturate(1.1) brightness(0.93) contrast(1.05) hue-rotate(-6deg)",
+          }}
+        />
+        <img
+          src={coverDubai}
+          alt="Dubai skyline at sunset"
+          className="absolute inset-y-0 left-0 w-1/2 h-full object-cover"
+          style={{
+            filter:
+              "sepia(0.35) saturate(1.05) brightness(0.92) contrast(1.05) hue-rotate(-4deg)",
           }}
         />
         <div
