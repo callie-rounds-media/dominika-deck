@@ -67,6 +67,7 @@ export default {
       fontFamily: {
         display: ["Fraunces", "Georgia", "serif"],
         body: ["Hanken Grotesk", "system-ui", "sans-serif"],
+        headline: ["Cormorant Garamond", "Georgia", "serif"],
       },
       borderRadius: {
         lg: "var(--radius)",
