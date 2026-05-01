@@ -357,7 +357,7 @@ const Index = () => {
       {/* II — FEED CONCEPTS */}
       <section className="px-6 md:px-12 py-32 md:py-48 bg-background">
         <div className="mx-auto max-w-7xl">
-          <p className="text-[10px] tracking-[0.3em] uppercase text-ink/50 mb-16 md:mb-20">
+          <p className="text-[20px] tracking-[0.3em] uppercase text-ink/60 mb-16 md:mb-20">
             ii. feed concepts
           </p>
 
@@ -567,7 +567,7 @@ const Index = () => {
           </h2>
 
           <p className="font-headline font-normal text-center mx-auto max-w-[40ch] text-[clamp(1.15rem,1.8vw,1.5rem)] leading-[1.3] text-ink/65 mb-16 md:mb-20">
-            your brain prefers what it has already seen.
+            the human brain prefers what it has already seen.
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-12 gap-y-12 gap-x-16 items-start">
@@ -621,7 +621,7 @@ const Index = () => {
       {/* V — FIRST THREE POST IDEAS */}
       <section className="px-6 md:px-12 py-32 md:py-48 bg-background">
         <div className="mx-auto max-w-6xl">
-          <p className="text-[10px] tracking-[0.3em] uppercase text-ink/50 mb-16 md:mb-20">
+          <p className="text-[20px] tracking-[0.3em] uppercase text-ink/60 mb-16 md:mb-20">
             vi. first three post ideas
           </p>
 
