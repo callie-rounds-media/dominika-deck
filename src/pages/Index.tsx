@@ -1,4 +1,5 @@
-import coverDiptych from "@/assets/cover-diptych.jpg";
+import coverDubai from "@/assets/cover-dubai.jpg";
+import coverBali from "@/assets/gallery-balcony.jpg";
 import closingSilhouette from "@/assets/closing-sauna.jpg";
 import feedTropicalEarth from "@/assets/feed-tropical-earth.jpg";
 import feedWellnessNatural from "@/assets/feed-wellness-natural.jpg";
@@ -155,26 +156,35 @@ const Index = () => {
     <main className="bg-background text-ink font-body antialiased overflow-x-hidden">
       {/* 1 — COVER */}
       <section className="relative h-[100svh] w-full overflow-hidden grain">
-        <img
-          src={coverDiptych}
-          alt="Dubai blue hour skyline beside a Bali jungle morning"
-          className="absolute inset-0 h-full w-full object-cover"
-          width={1920}
-          height={1280}
-          style={{
-            filter:
-              "sepia(0.45) saturate(1.1) brightness(0.93) contrast(1.05) hue-rotate(-6deg)",
-          }}
-        />
+        <div className="absolute inset-0 grid grid-cols-2">
+          <img
+            src={coverDubai}
+            alt="Dubai skyline at sunset"
+            className="h-full w-full object-cover"
+            style={{
+              filter:
+                "sepia(0.35) saturate(1.05) brightness(0.92) contrast(1.05) hue-rotate(-4deg)",
+            }}
+          />
+          <img
+            src={coverBali}
+            alt="Bali palm trees at golden hour"
+            className="h-full w-full object-cover"
+            style={{
+              filter:
+                "sepia(0.35) saturate(1.05) brightness(0.92) contrast(1.05) hue-rotate(-4deg)",
+            }}
+          />
+        </div>
         <div
           className="absolute inset-0"
           style={{
             background:
-              "linear-gradient(180deg, rgba(178,100,73,0.18) 0%, rgba(38,33,28,0.35) 100%)",
+              "linear-gradient(180deg, rgba(178,100,73,0.15) 0%, rgba(38,33,28,0.4) 100%)",
             mixBlendMode: "multiply",
           }}
         />
-        <div className="absolute inset-0 bg-ink/15" />
+        <div className="absolute inset-0 bg-ink/20" />
         <div className="absolute inset-0 flex flex-col items-center justify-between py-10 md:py-14 px-6 z-10">
           <p
             className="text-[10px] md:text-[11px] tracking-[0.32em] uppercase fade-up"
@@ -210,9 +220,10 @@ const Index = () => {
           <h2 className="font-headline font-normal text-center mx-auto text-[clamp(2.6rem,6vw,4.8rem)] leading-[1.05] text-balance text-ink mb-6 md:mb-8">
             niche direction.
           </h2>
-          <p className="font-headline font-normal text-center mx-auto max-w-[44ch] text-[clamp(1.15rem,1.8vw,1.5rem)] leading-[1.3] text-ink/65 mb-16 md:mb-20">
-            based off our conversations, i didn't want to dilute it. one strong
-            niche that feels right for now :)
+          <p className="font-headline font-normal text-center mx-auto max-w-[52ch] text-[clamp(1.15rem,1.8vw,1.5rem)] leading-[1.4] text-ink/70 mb-16 md:mb-20">
+            this is the version of you i see when i read everything you've
+            shared. a niche built around what makes you, you. the goal isn't to
+            be louder than everyone else. it's to be unmistakably you :)
           </p>
 
           <div className="space-y-20 md:space-y-28 max-w-6xl mx-auto">
