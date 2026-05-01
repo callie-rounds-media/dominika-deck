@@ -211,10 +211,10 @@ const Index = () => {
           <h2 className="font-headline font-normal text-center mx-auto text-[clamp(2.6rem,6vw,4.8rem)] leading-[1.05] text-balance text-ink mb-6 md:mb-8">
             niche direction.
           </h2>
-          <p className="font-headline font-normal text-center mx-auto max-w-[52ch] text-[clamp(1.15rem,1.8vw,1.5rem)] leading-[1.4] text-ink/70 mb-16 md:mb-20">
+          <p className="font-headline font-normal text-center mx-auto max-w-[46ch] text-[clamp(1.15rem,1.8vw,1.5rem)] leading-[1.55] text-ink/70 mb-28 md:mb-40">
             this is the version of you i see when i read everything you've
-            shared. a niche built around what makes you, you. the goal isn't to
-            be louder than everyone else. it's to be unmistakably you :)
+            shared, a niche built around what makes you, you. not louder than
+            everyone else, just unmistakably you :)
           </p>
 
           <div className="space-y-20 md:space-y-28 max-w-6xl mx-auto">
@@ -279,7 +279,7 @@ const Index = () => {
                   style={{ aspectRatio: "4 / 5" }}
                 >
                   <img
-                    src={niche3Life}
+                    src={niche4Vision}
                     alt=""
                     loading="lazy"
                     className="w-full h-full object-cover"
@@ -319,7 +319,7 @@ const Index = () => {
                   style={{ aspectRatio: "4 / 5" }}
                 >
                   <img
-                    src={niche4Vision}
+                    src={niche3Life}
                     alt=""
                     loading="lazy"
                     className="w-full h-full object-cover"
