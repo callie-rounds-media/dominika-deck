@@ -606,9 +606,7 @@ const Index = () => {
               </p>
               <p>
                 the goal is not to invent. the goal is to recognize what is
-                already pulling people in, and rebuild it with your story. take
-                the format. swap in your subject, your caption, your light. that
-                is not copying. that is craft.
+                already pulling people in, and rebuild it with your story.
               </p>
               <p className="font-headline font-normal text-ink/95 text-[clamp(1.15rem,1.6vw,1.35rem)] leading-[1.4] pt-2">
                 no need to reinvent the wheel. riff on what is already working.
