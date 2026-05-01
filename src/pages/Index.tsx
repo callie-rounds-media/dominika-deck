@@ -291,11 +291,191 @@ const Index = () => {
                   ))}
                 </div>
 
+                <p className="font-display italic uppercase tracking-[0.18em] text-[10px] text-ink/70">
+                  inspired by {p.inspired}
+                </p>
+
+                <p className="uppercase tracking-[0.18em] text-[10px] text-ink/45">
+                  search {p.search}
+                </p>
+
                 <div className="pt-2">
                   <div className="h-px w-12 bg-ink/30" />
                 </div>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* V — TYPOGRAPHY SUGGESTIONS */}
+      <section className="px-6 md:px-12 py-32 md:py-48 bg-sand/40">
+        <div className="mx-auto max-w-7xl">
+          <p className="text-[10px] tracking-[0.3em] uppercase text-ink/50 mb-16 md:mb-20">
+            v. typography suggestions
+          </p>
+
+          <p className="font-display italic font-light text-center mx-auto max-w-[42ch] text-[clamp(1.1rem,1.8vw,1.45rem)] leading-[1.5] text-ink/80 mb-24 md:mb-32">
+            type is the difference between editorial and hobbyist. people scroll
+            past default sans serif. they stop on intentional pairings.
+          </p>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-16 md:gap-10">
+            {typography.map((t) => (
+              <div key={t.n} className="space-y-6">
+                <div className="bg-background p-8 md:p-10 min-h-[180px] md:min-h-[220px] flex items-center grain-soft relative">
+                  {t.sample}
+                </div>
+
+                <p className="font-display italic text-[14px] text-ink/55">{t.n}</p>
+
+                <h3 className="font-display italic font-light text-[clamp(1.5rem,2.4vw,2rem)] leading-[1.1] text-balance">
+                  {t.name}
+                </h3>
+
+                <p className="text-[13px] leading-[1.65] text-ink/65 max-w-[34ch]">
+                  {t.fonts}
+                </p>
+
+                <p className="text-[14px] leading-[1.65] text-ink/75 max-w-[34ch]">
+                  {t.feel}
+                </p>
+
+                <p className="font-display italic uppercase tracking-[0.18em] text-[10px] text-ink/70">
+                  like {t.like}
+                </p>
+
+                <div className="pt-2">
+                  <div className="h-px w-12 bg-ink/30" />
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* VI — POST FORMAT SUGGESTIONS */}
+      <section className="px-6 md:px-12 py-32 md:py-48 bg-background">
+        <div className="mx-auto max-w-7xl">
+          <p className="text-[10px] tracking-[0.3em] uppercase text-ink/50 mb-16 md:mb-20">
+            vi. post format suggestions
+          </p>
+
+          <p className="font-display italic font-light text-center mx-auto max-w-[44ch] text-[clamp(1.1rem,1.8vw,1.45rem)] leading-[1.5] text-ink/80 mb-24 md:mb-32">
+            format is the unglamorous half of strategy. the same idea fails in
+            one format and goes viral in another. we test the format more than
+            the idea.
+          </p>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-16 md:gap-10">
+            {formats.map((f) => (
+              <div key={f.n} className="space-y-6">
+                <div className="relative w-full aspect-[4/5] overflow-hidden grain-soft bg-sand/60">
+                  <img
+                    src={f.img}
+                    alt=""
+                    loading="lazy"
+                    className="absolute inset-0 h-full w-full object-cover"
+                  />
+                </div>
+
+                <p className="font-display italic text-[14px] text-ink/55">{f.n}</p>
+
+                <h3 className="font-display italic font-light text-[clamp(1.35rem,2.2vw,1.85rem)] leading-[1.15] text-balance">
+                  {f.name}
+                </h3>
+
+                <p className="font-display italic uppercase tracking-[0.18em] text-[10px] text-ink/70">
+                  inspired by {f.inspired}
+                </p>
+
+                <p className="text-[14px] leading-[1.7] text-ink/75 max-w-[36ch]">
+                  {f.body}
+                </p>
+              </div>
+            ))}
+          </div>
+
+          {/* INTERLUDE */}
+          <p className="text-center mx-auto max-w-[60ch] text-[clamp(1.05rem,1.4vw,1.35rem)] leading-[1.6] text-ink/80 py-32 md:py-44">
+            take what works. when you see inspiration you like, copy it exactly.
+            make it your own, but no need to reinvent the wheel.
+          </p>
+        </div>
+      </section>
+
+      {/* VII — POST IDEAS (placeholders) */}
+      <section className="px-6 md:px-12 py-32 md:py-48 bg-background">
+        <div className="mx-auto max-w-7xl">
+          <p className="text-[10px] tracking-[0.3em] uppercase text-ink/50 mb-16 md:mb-20">
+            vii. post ideas
+          </p>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-16 md:gap-10">
+            {["01", "02", "03"].map((n) => (
+              <div key={n} className="space-y-6 flex flex-col items-center">
+                <div className="w-full aspect-[4/5] bg-sand/50" />
+                <p className="font-display italic text-[14px] text-ink/55 text-center">
+                  {n}
+                </p>
+                <div className="w-full flex flex-col items-center gap-3 pt-2">
+                  <div className="h-px w-1/2 bg-ink/20" />
+                  <div className="h-px w-[70%] bg-ink/15" />
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* VIII — WHAT'S NEXT */}
+      <section className="relative h-[100svh] min-h-[640px] w-full overflow-hidden grain">
+        <img
+          src={closingSilhouette}
+          alt="A woman with a bead bracelet behind sheer curtains, soft silhouette"
+          className="absolute inset-0 h-full w-full object-cover"
+        />
+        <div className="absolute inset-0 bg-ink/55" />
+
+        <div className="absolute inset-0 flex flex-col justify-center px-6 md:px-16 z-10">
+          <div className="max-w-3xl space-y-10">
+            <p
+              className="text-[10px] tracking-[0.32em] uppercase"
+              style={{ color: "hsl(var(--background) / 0.7)" }}
+            >
+              viii. what's next
+            </p>
+
+            <h2
+              className="font-display italic font-light text-balance text-[clamp(2rem,5vw,4rem)] leading-[1.08]"
+              style={{ color: "hsl(var(--background))" }}
+            >
+              we lock the direction first. then everything else gets easier.
+            </h2>
+
+            <ul className="space-y-3 pt-4">
+              {[
+                "day 7. voice and visual locked.",
+                "days 8 to 9. content pillars built together.",
+                "day 10. competitor and inspiration research.",
+                "day 11. first thirty day content calendar.",
+              ].map((line) => (
+                <li
+                  key={line}
+                  className="uppercase tracking-[0.22em] text-[11px]"
+                  style={{ color: "hsl(var(--background) / 0.75)" }}
+                >
+                  {line}
+                </li>
+              ))}
+            </ul>
+
+            <p
+              className="font-display italic font-light text-[clamp(1.1rem,1.6vw,1.4rem)] pt-8"
+              style={{ color: "hsl(var(--background))" }}
+            >
+              from callie.
+            </p>
           </div>
         </div>
       </section>
