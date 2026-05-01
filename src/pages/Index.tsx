@@ -1,34 +1,128 @@
 import coverDiptych from "@/assets/cover-diptych.jpg";
 import audienceWalking from "@/assets/audience-walking.jpg";
 import promiseDubai from "@/assets/promise-dubai.jpg";
+import closingSilhouette from "@/assets/closing-silhouette.jpg";
+import post1 from "@/assets/post-1.jpg";
+import post2 from "@/assets/post-2.jpg";
+import post3 from "@/assets/post-3.jpg";
 
 const palettes = [
   {
     n: "01",
-    name: "bone & terracotta",
-    hexes: ["#F4ECE0", "#EAE0D0", "#D6C3A8", "#B26449", "#7A3A28", "#26211C"],
+    name: "sun-bleached linen.",
+    hexes: ["#F4ECE0", "#EAE0D0", "#C9A88A", "#B26449", "#8C4A33", "#26211C"],
     lines: [
-      "warm, sun-bleached, slightly mediterranean.",
-      "feels like linen drying on a balcony in canggu.",
+      "the mediterranean still life direction.",
+      "oat, bone, sand, terracotta, faded gold.",
     ],
+    inspired: "yentlspijk, sirintalbot, joliejanine",
+    search: '"tonal cream editorial" or "linen and terracotta moodboard"',
   },
   {
     n: "02",
-    name: "ink & yellow",
-    hexes: ["#F4ECE0", "#E5DBC9", "#A89E8C", "#3A3530", "#26211C", "#E8C04A"],
+    name: "dubai blue hour.",
+    hexes: ["#F4ECE0", "#EAE0D0", "#B26449", "#8C4A33", "#1E2A38", "#0F1620"],
     lines: [
-      "quiet base, one disciplined flash of light.",
-      "editorial, unsentimental, a little expensive.",
+      "editorial dark with a warm glow.",
+      "deep navy, ink, terracotta, bone, sunset orange.",
     ],
+    inspired: "pink.lem, sallyhadin, marimiqadzze",
+    search: '"blue hour editorial" or "navy and terracotta"',
   },
   {
     n: "03",
-    name: "blue hour",
-    hexes: ["#F4ECE0", "#D9D2C4", "#8A93A0", "#3E4A5C", "#1E2A38", "#0E1620"],
+    name: "bali earth.",
+    hexes: ["#F4ECE0", "#E2D8C5", "#B26449", "#8C4A33", "#3E4F2A", "#26211C"],
     lines: [
-      "dubai at dusk, the moment before the lights win.",
-      "structured, cool, holds ambition without selling it.",
+      "organic tropical, lived in nature.",
+      "jungle green, terracotta, deep brown, soft amber.",
     ],
+    inspired: "marianawengorovius, meloai, gabriella__cristina",
+    search: '"bali earth tones" or "jungle and terracotta"',
+  },
+];
+
+const typography = [
+  {
+    n: "01",
+    name: "the journal entry.",
+    fonts: "header in Fraunces italic. body in Inter.",
+    feel: "literary, reflective, soft. lowercase friendly.",
+    like: "yentlspijk",
+    sample: (
+      <p
+        className="font-display italic font-light text-[clamp(1.4rem,2.4vw,2rem)] leading-[1.25] text-ink"
+        style={{ fontFamily: "'Fraunces', Georgia, serif" }}
+      >
+        i once believed performance was the same as identity.
+      </p>
+    ),
+  },
+  {
+    n: "02",
+    name: "the magazine cover.",
+    fonts: "header in Canela or Playfair Display. accent italic in same family. body in Inter.",
+    feel: "editorial, art directed, deliberate.",
+    like: "sirintalbot",
+    sample: (
+      <div className="space-y-3">
+        <p
+          className="italic uppercase tracking-[0.18em] text-[10px] text-ink/60"
+          style={{ fontFamily: "'Fraunces', Georgia, serif" }}
+        >
+          (educational wellness)
+        </p>
+        <p
+          className="font-semibold text-[clamp(1.5rem,2.6vw,2.1rem)] leading-[1.1] text-ink"
+          style={{ fontFamily: "'Playfair Display', 'Fraunces', Georgia, serif" }}
+        >
+          How I Became{" "}
+          <span className="italic" style={{ color: "#E8C04A" }}>
+            Peptide
+          </span>{" "}
+          Obsessed
+        </p>
+      </div>
+    ),
+  },
+  {
+    n: "03",
+    name: "the soft note.",
+    fonts: "header in Söhne or Inter, all lowercase. italic Fraunces for occasional emotional accents only.",
+    feel: "casual, modern, unpretentious.",
+    like: "marianawengorovius",
+    sample: (
+      <p
+        className="text-[clamp(1.4rem,2.4vw,2rem)] leading-[1.25] text-ink lowercase font-normal"
+        style={{ fontFamily: "'Inter', system-ui, sans-serif" }}
+      >
+        i think i want to try
+      </p>
+    ),
+  },
+];
+
+const formats = [
+  {
+    n: "01",
+    name: "still life cover plus journal caption.",
+    inspired: "yentlspijk",
+    body: "a real object in soft natural light. two line italic quote overlay. three paragraph journal caption that ends on an invitation, not advice.",
+    img: post1,
+  },
+  {
+    n: "02",
+    name: "magazine cover with accent word.",
+    inspired: "sirintalbot",
+    body: "eyebrow in italic small caps. bold serif headline. one yellow italic accent word on the loaded term. soft DM gate at the close.",
+    img: post2,
+  },
+  {
+    n: "03",
+    name: "voiceover reel, no face.",
+    inspired: "keziacook",
+    body: "action b roll. subject not facing camera. big serif text overlay carrying the message. music supports, never leads.",
+    img: post3,
   },
 ];
 
