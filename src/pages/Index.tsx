@@ -127,30 +127,6 @@ const Index = () => {
         </div>
       </section>
 
-      {/* 4 — GALLERY */}
-      <section className="px-6 md:px-12 py-32 md:py-44">
-        <div className="mx-auto max-w-7xl">
-          <div className="grid grid-cols-2 md:grid-cols-3 auto-rows-[min(38vw,18rem)] gap-3 md:gap-5">
-            {gallery.map((g, i) => (
-              <figure
-                key={i}
-                className={`relative overflow-hidden grain-soft group ${g.span}`}
-              >
-                <img
-                  src={g.src}
-                  alt={g.caption}
-                  loading="lazy"
-                  className="h-full w-full object-cover transition-transform duration-[1400ms] ease-out group-hover:scale-[1.03]"
-                />
-                <figcaption className="absolute left-3 bottom-3 right-3 font-display italic text-[11px] md:text-[12px] lowercase text-background/95 drop-shadow-[0_1px_8px_rgba(0,0,0,0.6)]">
-                  {g.caption}
-                </figcaption>
-              </figure>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* 5 — VOICE */}
       <section className="px-6 md:px-12 py-40 md:py-56 bg-background">
         <div className="mx-auto max-w-5xl">
